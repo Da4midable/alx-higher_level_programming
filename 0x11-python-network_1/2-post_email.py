@@ -34,4 +34,4 @@ if __name__ == "__main__":
 
     with urllib.request.urlopen(req) as response:
         post_fetch = response.read().decode('utf-8')
-        print('Your email is: {:s}'.format(post_fetch.get('email')))
+        print('Your email is: {:s}'.format(values.get('email')))
