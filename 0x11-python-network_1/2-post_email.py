@@ -26,7 +26,7 @@ if __name__ == "__main__":
 
     url = sys.argv[1]
     email_add = sys.argv[2]
-    values = {'email': email_add}
+    values = {'email':email_add}
     data = urllib.parse.urlencode(values)
     data = data.encode('utf-8')
 
