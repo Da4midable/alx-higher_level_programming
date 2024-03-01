@@ -21,17 +21,14 @@ import sys
 import urllib.request
 import urllib.parse
 
-
 if __name__ == "__main__":
-
     url = sys.argv[1]
-    email_add = sys.argv[2]
-    values = {'email':email_add}
-    data = urllib.parse.urlencode(values)
-    data = data.encode('utf-8')
+    email = sys.argv[2]
 
+    values = {'email': email}
+    data = urllib.parse.urlencode(values)
+    data = data.encode('utf-8')  # data should be bytes
     req = urllib.request.Request(url, data)
 
     with urllib.request.urlopen(req) as response:
-        post_fetch = response.read().decode('utf-8')
-        print('Your email is: {:s}'.format(values.get('email')))
+        print("Your email is: {:s}".format(response.read().decode('utf-8')))
