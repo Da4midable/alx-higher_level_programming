@@ -42,3 +42,5 @@ print("Body response:")
 print("    - type:", type(html_content))
 print("    - content:", html_content)
 print("    - utf8 content:", html_content.decode('utf-8'))
+
+if __name__ == "__main__":

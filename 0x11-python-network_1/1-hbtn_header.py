@@ -35,3 +35,5 @@ url = sys.argv[1]
 with urllib.request.urlopen(url) as response:
     headers = dict(response.getheaders())
     print(headers.get('X-Request-Id'))
+
+if __name__ == "__main__":
