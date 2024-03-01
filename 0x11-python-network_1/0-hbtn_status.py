@@ -32,15 +32,13 @@ Example Output:
 """
 import urllib.request
 
-
-url = 'https://alx-intranet.hbtn.io/status'
-
-with urllib.request.urlopen(url) as response:
-    html_content = response.read()
-
-print("Body response:")
-print("    - type:", type(html_content))
-print("    - content:", html_content)
-print("    - utf8 content:", html_content.decode('utf-8'))
-
 if __name__ == "__main__":
+    url = 'https://alx-intranet.hbtn.io/status'
+
+    with urllib.request.urlopen(url) as response:
+        html_content = response.read()
+
+    print("Body response:")
+    print("    - type:", type(html_content))
+    print("    - content:", html_content)
+    print("    - utf8 content:", html_content.decode('utf-8'))
