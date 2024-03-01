@@ -39,6 +39,6 @@ if __name__ == "__main__":
         html_content = response.read()
 
     print("Body response:")
-    print("    - type:", type(html_content))
-    print("    - content:", html_content)
-    print("    - utf8 content:", html_content.decode('utf-8'))
+    print("\t- type:", type(html_content))
+    print("\t- content:", html_content)
+    print("\t- utf8 content:", html_content.decode('utf-8'))
