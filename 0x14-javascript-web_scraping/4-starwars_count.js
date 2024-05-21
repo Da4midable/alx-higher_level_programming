@@ -13,12 +13,12 @@ const wedgeAntillesId = 18;
 
 request(apiUrl, (error, response, body) => {
   if (error) {
-    console.error('Error making the request:', error);
+    console.error(error);
     process.exit(1);
   }
 
   if (response.statusCode !== 200) {
-    console.error('Failed to fetch data. Status code:', response.statusCode);
+    console.error(response.statusCode);
     process.exit(1);
   }
 
