@@ -1,13 +1,12 @@
 #!/usr/bin/python3
 """Script defines class State:
-
 State class:
 inherits from Base Tips
 links to the MySQL table states
 class attribute id that represents a column of an auto-generated,
-unique integer, can’t be null and is a primary key
+unique integer, can't be null and is a primary key
 class attribute name that represents a column of a string with maximum 128
-characters and can’t be null
+characters and can't be null
 """
 
 from sqlalchemy import Column, String, Integer, CHAR
